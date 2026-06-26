@@ -284,3 +284,28 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+@media (max-width: 767px) {
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .brand {
+    max-width: calc(100% - 52px);
+  }
+
+  .brand-text small {
+    display: none;
+  }
+
+  .nav {
+    margin-top: 8px;
+  }
+
+  .hero {
+    padding-top: 6px;
+  }
+
+  .hero-card {
+    grid-template-columns: 1fr;
+  }
+}
