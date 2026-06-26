@@ -2,116 +2,218 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>نجاح.كوم — تلبية حاجات الناس في عالم التكنولوجيا</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ن</text></svg>">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="نجاح.كوم منصة عربية لتلبية حاجات الناس في عالم التكنولوجيا، التعليم، المهن، والوظائف." />
+  <title>نجاح.كوم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo-wrap">
-        <div class="logo">
-          <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#0f172a"/><text x="50%" y="58%" text-anchor="middle" font-size="48" fill="#fff" font-family="sans-serif">ن</text></svg>
-        </div>
-        <div class="brand">
-          <h1>نجاح.كوم</h1>
-          <p class="tag">تلبية حاجات الناس في عالم التكنولوجيا</p>
-        </div>
-      </div>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
 
-      <nav class="main-nav" id="mainNav">
-        <button id="navToggle" class="nav-toggle" aria-label="قائمة">☰</button>
-        <ul class="nav-list">
-          <li><a href="#professions">مهن وحرف</a></li>
-          <li><a href="#languages">تعلم لغات أجنبية</a></li>
-          <li><a href="#programming">تعلم لغات البرمجة</a></li>
-          <li><a href="#contact">لنتواصل مع بعض</a></li>
-          <li><a href="#jobs">بحث عن وظيفة</a></li>
-          <li><a href="#market">مركز تجاري</a></li>
-          <li><a href="#academics">علوم أكاديمية</a></li>
-        </ul>
+    <div class="container topbar">
+      <a class="brand" href="#home" aria-label="نجاح.كوم">
+        <span class="brand-mark">ن</span>
+        <span class="brand-text">
+          <strong>نجاح.كوم</strong>
+          <small>تلبية حاجات الناس في عالم التكنولوجيا</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
+        ☰
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#professions">مهن وحرف</a>
+        <a href="#languages">تعلم لغات أجنبية</a>
+        <a href="#programming">لغات البرمجة</a>
+        <a href="#contact">لنتواصل مع بعض</a>
+        <a href="#jobs">بحث عن وظيفة</a>
+        <a href="#market">مركز تجاري</a>
+        <a href="#academics">علوم أكاديمية</a>
       </nav>
     </div>
 
-    <div id="dynamic-bg" class="dynamic-bg" aria-hidden="true"></div>
-    <div class="hero container">
-      <h2>منصة النجاح .كوم</h2>
-      <p>منصة متكاملة لخدمات ومحتوى التكنولوجيا، المهنية والتعليمية، والسوق التجاري.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#programming">ابدأ التعلم</a>
-        <a class="btn ghost" href="#market">تسوق الآن</a>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">منصة ذكية | عربية | حديثة</span>
+        <h1>نجاح.كوم</h1>
+        <p>
+          بوابة تجمع التعلم، الوظائف، المهارات، والخدمات التقنية في مكان واحد بتصميم فخم وسهل على الهاتف.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#programming">ابدأ الآن</a>
+          <a class="btn btn-secondary" href="#contact">تواصل معنا</a>
+        </div>
       </div>
-    </div>
+
+      <div class="hero-card">
+        <div class="hero-stat">
+          <strong>7</strong>
+          <span>أقسام رئيسية</span>
+        </div>
+        <div class="hero-stat">
+          <strong>RTL</strong>
+          <span>تصميم عربي كامل</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Mobile</strong>
+          <span>متجاوب للهاتف</span>
+        </div>
+      </div>
+    </section>
   </header>
 
-  <main class="container main">
-    <section id="professions" class="card-grid">
-      <h3>مهن وحرف</h3>
-      <div class="cards">
-        <article class="card"><h4>التصنيع اليدوي</h4><p>درجات وورش وأدلة مهنية للبدء والعمل.</p></article>
-        <article class="card"><h4>الصيانة التقنية</h4><p>دورات وأسواق لخدمات الصيانة.</p></article>
-        <article class="card"><h4>التصميم الرقمي</h4><p>مشاريع وفرص عمل حر.</p></article>
+  <main class="container main-content">
+    <section id="professions" class="section-block">
+      <div class="section-head">
+        <h2>مهن وحرف</h2>
+        <p>مساحة لعرض المهارات العملية، الخدمات، والفرص المهنية.</p>
+      </div>
+      <div class="grid-cards">
+        <article class="info-card image-card">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" alt="مهنة وحرفة">
+          <div>
+            <h3>الحرف اليدوية</h3>
+            <p>تعلم الأعمال اليدوية والخدمات المهنية بأسلوب عملي.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <h3>الصيانة التقنية</h3>
+          <p>خدمات صيانة الهواتف، الحواسيب، والأجهزة الذكية.</p>
+        </article>
+        <article class="info-card">
+          <h3>التصميم الرقمي</h3>
+          <p>تطوير مهارات التصميم والجرافيك والهوية البصرية.</p>
+        </article>
       </div>
     </section>
 
-    <section id="languages" class="card-grid">
-      <h3>تعلم لغات أجنبية</h3>
-      <div class="cards">
-        <article class="card"><h4>الإنجليزية</h4><p>دورات للمبتدئين وللمتقدمين.</p></article>
-        <article class="card"><h4>الفرنسية</h4><p>قواعد، محادثة، واختبارات شهادة.</p></article>
-        <article class="card"><h4>الإسبانية</h4><p>مسارات تعليمية عملية وسريعة.</p></article>
+    <section id="languages" class="section-block">
+      <div class="section-head">
+        <h2>تعلم لغات أجنبية</h2>
+        <p>مسارات تعليمية للمحادثة، القواعد، والكتابة.</p>
+      </div>
+      <div class="grid-cards">
+        <article class="info-card image-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="تعلم لغات أجنبية">
+          <div>
+            <h3>الإنجليزية والفرنسية</h3>
+            <p>محتوى تدريبي يناسب المبتدئين والمتقدمين.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <h3>المحادثة</h3>
+          <p>تحسين النطق والقدرة على التواصل اليومي.</p>
+        </article>
+        <article class="info-card">
+          <h3>القواعد والمفردات</h3>
+          <p>تعلّم القواعد بشكل مبسط ومنظم.</p>
+        </article>
       </div>
     </section>
 
-    <section id="programming" class="card-grid">
-      <h3>تعلم لغات البرمجة</h3>
-      <div class="cards">
-        <article class="card"><h4>جافاسكربت</h4><p>مبادئ، مشاريع، وفرص توظيف.</p></article>
-        <article class="card"><h4>بايثون</h4><p>تحليل بيانات، ذكاء اصطناعي، وأتمتة.</p></article>
-        <article class="card"><h4>تصميم واجهات</h4><p>HTML, CSS, واستخدام أطر عمل.</p></article>
+    <section id="programming" class="section-block">
+      <div class="section-head">
+        <h2>تعلم لغات البرمجة</h2>
+        <p>مسار تقني للمبتدئين والراغبين في دخول عالم التطوير.</p>
+      </div>
+      <div class="grid-cards">
+        <article class="info-card image-card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80" alt="تعلم البرمجة">
+          <div>
+            <h3>HTML و CSS و JavaScript</h3>
+            <p>أساسيات إنشاء المواقع بشكل احترافي وسريع.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <h3>Python</h3>
+          <p>لتحليل البيانات، الأتمتة، والذكاء الاصطناعي.</p>
+        </article>
+        <article class="info-card">
+          <h3>مشاريع تطبيقية</h3>
+          <p>تطبيق ما تتعلمه في مشاريع واقعية قابلة للنشر.</p>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="split">
-      <div>
-        <h3>لنتواصل مع بعض</h3>
-        <p>أرسل رسالة أو اطلب استشارة تقنية، فريقنا جاهز للمساعدة.</p>
-        <form id="contactForm" class="contact-form">
-          <input name="name" placeholder="الاسم" required>
-          <input name="email" type="email" placeholder="البريد الإلكتروني" required>
-          <textarea name="message" rows="4" placeholder="الرسالة" required></textarea>
-          <button class="btn primary" type="submit">إرسال</button>
-        </form>
-        <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+    <section id="contact" class="section-block split-layout">
+      <div class="section-head">
+        <h2>لنتواصل مع بعض</h2>
+        <p>أرسل رسالة مباشرة وسنرد عليك في أقرب وقت.</p>
       </div>
-      <div class="map-card">
-        <h4>موقعنا</h4>
-        <p>Djelfa, الجزائر — تواصل عبر الهاتف أو واتساب.</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="الاسم الكامل" required />
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+        <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا" required></textarea>
+        <button type="submit" class="btn btn-primary">إرسال</button>
+        <p class="form-msg" id="formMsg" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="jobs" class="section-block">
+      <div class="section-head">
+        <h2>بحث عن وظيفة</h2>
+        <p>فرص مهنية محلية وعن بعد في مجالات مختلفة.</p>
+      </div>
+      <div class="grid-cards">
+        <article class="info-card">
+          <h3>وظائف محلية</h3>
+          <p>اعثر على فرص عمل قريبة من موقعك.</p>
+        </article>
+        <article class="info-card">
+          <h3>عمل عن بعد</h3>
+          <p>فرص عمل مرنة مع شركات ومشاريع رقمية.</p>
+        </article>
+        <article class="info-card">
+          <h3>السيرة الذاتية</h3>
+          <p>أدلة ونصائح لتحسين ملفك المهني.</p>
+        </article>
       </div>
     </section>
 
-    <section id="jobs" class="card-grid">
-      <h3>بحث عن وظيفة</h3>
-      <div class="cards">
-        <article class="card"><h4>فرص محلية</h4><p>إعلانات وظائف محدثة ومصادر للتقديم.</p></article>
-        <article class="card"><h4>فرص عن بعد</h4><p>وظائف عن بُعد من شركات عالمية.</p></article>
+    <section id="market" class="section-block">
+      <div class="section-head">
+        <h2>مركز تجاري</h2>
+        <p>قسم مخصص للمنتجات والخدمات التقنية والتعليمية.</p>
+      </div>
+      <div class="grid-cards">
+        <article class="info-card image-card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80" alt="مركز تجاري">
+          <div>
+            <h3>منتجات تقنية</h3>
+            <p>عرض الأدوات والملحقات والأجهزة الحديثة.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <h3>خدمات رقمية</h3>
+          <p>تصميم، تطوير، وصيانة وخدمات احترافية.</p>
+        </article>
       </div>
     </section>
 
-    <section id="market" class="card-grid">
-      <h3>مركز تجاري</h3>
-      <div class="cards">
-        <article class="card"><h4>معدات تقنية</h4><p>أجهزة وملحقات بأسعار منافسة.</p></article>
-        <article class="card"><h4>خدمات</h4><p>خدمات تطوير، تصميم، واستشارات.</p></article>
+    <section id="academics" class="section-block">
+      <div class="section-head">
+        <h2>علوم أكاديمية</h2>
+        <p>محتوى علمي وتعليمي يدعم الطلاب والباحثين.</p>
       </div>
-    </section>
-
-    <section id="academics" class="card-grid">
-      <h3>علوم أكاديمية</h3>
-      <div class="cards">
-        <article class="card"><h4>أبحاث</h4><p>ملخصات ومصادر أكاديمية.</p></article>
-        <article class="card"><h4>دورات جامعية</h4><p>مواد ومحاضرات مرجعية.</p></article>
+      <div class="grid-cards">
+        <article class="info-card image-card">
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80" alt="علوم أكاديمية">
+          <div>
+            <h3>الهندسة والبحث</h3>
+            <p>محتوى أكاديمي منظم مع طابع علمي واضح.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <h3>مراجع علمية</h3>
+          <p>ملخصات وأدلة تساعد في الدراسة والفهم.</p>
+        </article>
       </div>
     </section>
   </main>
@@ -119,27 +221,23 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <h4>من نحن</h4>
-        <p>نجاح.كوم منصة تهدف لتسهيل الوصول للخدمات التقنية والتعليمية والتجارية.</p>
+        <h3>من نحن</h3>
+        <p>نجاح.كوم منصة عربية تهدف إلى دعم الناس في التقنية، التعلم، والعمل، والتجارة الرقمية.</p>
       </div>
-
       <div>
-        <h4>تواصل</h4>
-        <ul class="contact-list">
-          <li>البريد: <a href="mailto:info@najah.com">info@najah.com</a></li>
-          <li>هاتف: <a href="tel:+213550000000">+213 55 000 0000</a></li>
-          <li>واتساب: <a href="https://wa.me/213550000000" target="_blank" rel="noopener">+213 55 000 0000</a></li>
-          <li>اتصل بنا: <a href="#contact">نموذج الاتصال</a></li>
-          <li>البلد والموقع: Djelfa, الجزائر</li>
+        <h3>التواصل</h3>
+        <ul>
+          <li>البريد الإلكتروني: <a href="mailto:info@najah.com">info@najah.com</a></li>
+          <li>رقم الهاتف: <a href="tel:+213550000000">+213 55 00 00 00</a></li>
+          <li>رقم الواتساب: <a href="https://wa.me/213550000000" target="_blank" rel="noopener">+213 55 00 00 00</a></li>
         </ul>
       </div>
-
       <div>
-        <h4>روابط سريعة</h4>
-        <ul class="quick-links">
-          <li><a href="#professions">مهن وحرف</a></li>
-          <li><a href="#programming">تعلم لغات البرمجة</a></li>
-          <li><a href="#market">مركز تجاري</a></li>
+        <h3>الموقع</h3>
+        <ul>
+          <li>البلد: الجزائر</li>
+          <li>الموقع: Bordj Menaïel, Boumerdes, DZ</li>
+          <li><a href="#contact">اتصل بنا</a></li>
         </ul>
       </div>
     </div>
