@@ -32,9 +32,9 @@
         <a href="#professions">مهن وحرف</a>
         <a href="#languages">تعلم لغات أجنبية</a>
         <a href="#programming">لغات البرمجة</a>
-        <a href="#contact">لنتواصل مع بعض</a>
+        <a href="#login">تسجيل الدخول</a>
         <a href="#jobs">بحث عن وظيفة</a>
-        <a href="#market">مركز تجاري</a>
+        <a href="#market">المتجر الإلكتروني</a>
         <a href="#academics">علوم أكاديمية</a>
       </nav>
     </div>
@@ -48,7 +48,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#programming">ابدأ الآن</a>
-          <a class="btn btn-secondary" href="#contact">تواصل معنا</a>
+          <a class="btn btn-secondary" href="#login">تسجيل الدخول</a>
         </div>
       </div>
 
@@ -142,16 +142,20 @@
       </div>
     </section>
 
-    <section id="contact" class="section-block split-layout">
+    <section id="login" class="section-block split-layout">
       <div class="section-head">
-        <h2>لنتواصل مع بعض</h2>
-        <p>أرسل رسالة مباشرة وسنرد عليك في أقرب وقت.</p>
+        <h2>تسجيل الدخول</h2>
+        <p>ادخل إلى حسابك للتفاعل مع المنصة مثل الشبكات الاجتماعية.</p>
       </div>
-      <form class="contact-form" id="contactForm">
-        <input type="text" name="name" placeholder="الاسم الكامل" required />
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required />
-        <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا" required></textarea>
-        <button type="submit" class="btn btn-primary">إرسال</button>
+
+      <form class="contact-form login-form" id="loginForm" method="post" action="/login" autocomplete="on">
+        <input type="text" name="username" placeholder="اسم المستخدم" autocomplete="username" required />
+        <input type="password" name="password" placeholder="كلمة المرور" autocomplete="current-password" required />
+        <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+        <div class="login-links">
+          <a href="#register">إنشاء حساب</a>
+          <a href="#forgot">نسيت كلمة المرور؟</a>
+        </div>
         <p class="form-msg" id="formMsg" aria-live="polite"></p>
       </form>
     </section>
@@ -179,12 +183,12 @@
 
     <section id="market" class="section-block">
       <div class="section-head">
-        <h2>مركز تجاري</h2>
-        <p>قسم مخصص للمنتجات والخدمات التقنية والتعليمية.</p>
+        <h2>المتجر الإلكتروني</h2>
+        <p>قسم مخصص للمنتجات والخدمات التقنية والتعليمية الخاصة بالمنصة.</p>
       </div>
       <div class="grid-cards">
         <article class="info-card image-card">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80" alt="مركز تجاري">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80" alt="المتجر الإلكتروني">
           <div>
             <h3>منتجات تقنية</h3>
             <p>عرض الأدوات والملحقات والأجهزة الحديثة.</p>
@@ -237,7 +241,7 @@
         <ul>
           <li>البلد: الجزائر</li>
           <li>الموقع: Bordj Menaïel, Boumerdes, DZ</li>
-          <li><a href="#contact">اتصل بنا</a></li>
+          <li><a href="#login">تسجيل الدخول</a></li>
         </ul>
       </div>
     </div>
